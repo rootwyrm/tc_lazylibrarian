@@ -131,6 +131,7 @@ config_update()
 ######################################################################
 application_install()
 {
+	lazylibrarian_install_bookstrap
 }
 
 lazylibrarian_install_bookstrap()
@@ -157,7 +158,7 @@ deploy_talecaster_user
 
 deploy_application_git reinst
 chown -R $tcuid:$tcgid $app_destdir
-lazylibrarian_install_bookstrap
+application_install
 
 config_checkdir
 config_copybase

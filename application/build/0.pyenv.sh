@@ -76,7 +76,7 @@ pip list --format=legacy | awk '{print $1}' > /tmp/pip.list
 printf '[BUILD] Validating module installation\n'
 printf 'Python [MODULES]: '
 for pydep in \
-	cffi cryptography enum34 idna ipaddress lxml pip pyasn1 pycparser \
+	cffi cryptography enum34 idna ipaddress lxml pip pycparser \
 	pyOpenSSL setuptools six wheel; do
 	grep -i $pydep /tmp/pip.list > /dev/null
 	if [ $? -eq 0 ]; then

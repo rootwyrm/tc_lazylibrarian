@@ -29,7 +29,7 @@ LABEL	com.rootwyrm.product="TaleCaster" \
 		org.label-schema.build-date="$LS_BLDDATE"
 
 ## PORTS
-EXPOSE	8171/tcp 
+EXPOSE	5299/tcp 
 
 ## Common Components
 COPY [ "application/", "/opt/talecaster" ]
